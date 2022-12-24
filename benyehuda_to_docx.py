@@ -133,7 +133,7 @@ def write_txt(doc, text, heading_level, author=False):
     h = doc.add_heading(heading, level=int(heading_level))
     h.alignment = WD_ALIGN_PARAGRAPH.RIGHT
 
-    p = doc.add_paragraph(text[2])
+    p = doc.add_paragraph(text[-1])
     p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     print("writing: "+ heading + ' / ' + text[1] )
 
